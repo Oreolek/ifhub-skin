@@ -67,8 +67,8 @@
      *}
     {if Config::Get( 'view.layout_show_banner' )}
         {component 'jumbotron'
-            title    = Config::Get('view.name')
-            subtitle = Config::Get('view.description')
+            title    = '&nbsp;'
+            subtitle = '&nbsp;'
             titleUrl = {router page='/'}
             classes  = 'layout-header'}
     {/if}

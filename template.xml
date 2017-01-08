@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
     <name>
-        <lang name="default">Developer</lang>
+        <lang name="default">IFHub</lang>
     </name>
     <author>
-        <lang name="default">LiveStreet Developers Team</lang>
+        <lang name="default">Alexander Yakovlev</lang>
     </author>
-    <homepage>http://livestreet.ru</homepage>
-    <version>2.0</version>
+    <homepage>https://ifhub.club</homepage>
+    <version>1.0</version>
     <requires>
         <livestreet>2.0</livestreet>
         <plugins>
         </plugins>
     </requires>
     <description>
-        <lang name="ru">Шаблон для разработчиков</lang>
-        <lang name="default">Template for developers</lang>
+        <lang name="ru">Шаблон ifhub.club</lang>
+        <lang name="default">Template for ifhub.club</lang>
     </description>
     <themes>
         <item>
