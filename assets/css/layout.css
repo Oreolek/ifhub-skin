@@ -1,0 +1,77 @@
+/**
+ * Сетка
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+
+/**
+ * Сетка
+ */
+.layout-container {
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.layout-content {
+    background: #fff;
+    padding: 40px !important;
+}
+.layout-nav .ls-nav.ls-nav--main {
+    margin: 0 auto;
+}
+.layout-footer {
+    padding: 20px 0 50px;
+    color: #777;
+    position: relative;
+}
+.layout-container.layout-no-sidebar .layout-content {
+    width: 100%;
+    margin-right: 0;
+}
+.layout-sidebar {
+    padding-left: 10px !important;
+}
+.layout-sidebar .ls-block {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 999px)  {
+    .layout-content { width: 100% !important; margin-bottom: 30px; padding: 15px !important; }
+    .layout-sidebar { width: 100% !important; margin-bottom: 30px; padding: 0; }
+
+    .ls-toolbar {
+        display: none;
+    }
+}
+@media (max-width: 480px)  {
+    .layout-container {
+        padding: 0;
+    }
+}
+
+/**
+ * Главное меню
+ */
+.layout-nav {
+    padding: 0 50px;
+    margin-bottom: 10px;
+    background: #222;
+}
+
+@media (max-width: 480px)  {
+    .layout-nav {
+        padding: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+/**
+ * Шапка сайта
+ */
+.ls-jumbotron {
+    background-image: url(../images/header.jpg);
+}
