@@ -63,18 +63,6 @@
 
 
     {**
-     * Шапка
-     *}
-    {if Config::Get( 'view.layout_show_banner' )}
-        {component 'jumbotron'
-            title    = '&nbsp;'
-            subtitle = '&nbsp;'
-            titleUrl = {router page='/'}
-            classes  = 'layout-header'}
-    {/if}
-
-
-    {**
      * Основная навигация
      *}
     <nav class="ls-grid-row layout-nav">
