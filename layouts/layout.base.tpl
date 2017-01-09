@@ -37,38 +37,72 @@
      *}
     {if {Config::Get('view.grid.type')} == 'fluid'}
         <style>
-            .layout-userbar,
             .layout-nav .ls-nav--main,
-            .layout-header .ls-jumbotron-inner,
-            .layout-container {
+            .layout-container,
+            .container {
                 min-width: {Config::Get('view.grid.fluid_min_width')};
                 max-width: {Config::Get('view.grid.fluid_max_width')};
             }
         </style>
     {else}
         <style>
-            .layout-userbar,
             .layout-nav .ls-nav--main,
-            .layout-header .ls-jumbotron-inner,
-            .layout-container { width: {Config::Get('view.grid.fixed_width')}; }
+            .layout-container,
+            .container { width: {Config::Get('view.grid.fixed_width')}; }
         </style>
     {/if}
 {/block}
 
 {block 'layout_body'}
     {**
-     * Юзербар
-     *}
-    {component 'userbar'}
-
-
-    {**
      * Основная навигация
      *}
+    <div class="layout-container">
     <nav class="ls-grid-row layout-nav">
-        {include 'navs/nav.main.tpl'}
-    </nav>
+        <h1 class="ls-userbar-logo">
+            <a href="{router page='/'}"><img src="/application/frontend/skin/ifhub/assets/images/logo.png" height="60px"></a>
+        </h1>
 
+        <nav class="ls-userbar-nav">
+            {if $oUserCurrent}
+                {$items = [
+                    [
+                        'text'       => "<img src=\"{$oUserCurrent->getProfileAvatarPath(24)}\" alt=\"{$oUserCurrent->getDisplayName()}\" class=\"avatar\" /> {$oUserCurrent->getDisplayName()}",
+                        'url'        => "{$oUserCurrent->getUserWebPath()}",
+                        'classes'    => 'ls-nav-item--userbar-username',
+                        'menu'       => [
+                            [ 'name' => 'whois',      'text' => {lang name='user.profile.nav.info'},         'url' => "{$oUserCurrent->getUserWebPath()}" ],
+                            [ 'name' => 'wall',       'text' => {lang name='user.profile.nav.wall'},         'url' => "{$oUserCurrent->getUserWebPath()}wall/", 'count' => $iUserCurrentCountWall ],
+                            [ 'name' => 'created',    'text' => {lang name='user.profile.nav.publications'}, 'url' => "{$oUserCurrent->getUserWebPath()}created/topics/", 'count' => $iUserCurrentCountCreated ],
+                            [ 'name' => 'favourites', 'text' => {lang name='user.profile.nav.favourite'},    'url' => "{$oUserCurrent->getUserWebPath()}favourites/topics/", 'count' => $iUserCurrentCountFavourite ],
+                            [ 'name' => 'friends',    'text' => {lang name='user.profile.nav.friends'},      'url' => "{$oUserCurrent->getUserWebPath()}friends/", 'count' => $iUserCurrentCountFriends ],
+                            [ 'name' => 'activity',   'text' => {lang name='user.profile.nav.activity'},     'url' => "{$oUserCurrent->getUserWebPath()}stream/" ],
+                            [ 'name' => 'talk',       'text' => {lang name='user.profile.nav.messages'},     'url' => "{router page='talk'}", 'count' => $iUserCurrentCountTalkNew ],
+                            [ 'name' => 'settings',   'text' => {lang name='user.profile.nav.settings'},     'url' => "{router page='settings'}" ],
+                            [ 'name' => 'admin',      'text' => {lang name='admin.title'},                   'url' => "{router page='admin'}", 'is_enabled' => $oUserCurrent && $oUserCurrent->isAdministrator() ]
+                        ]
+                    ],
+                    [ 'text' => $aLang.common.create, 'url' => "{router page='content'}add/topic", 'classes' => 'js-modal-toggle-default', 'attributes' => [ 'data-lsmodaltoggle-modal' => 'modal-write' ] ],
+                    [ 'text' => $aLang.talk.title,   'url' => "{router page='talk'}", 'title' => $aLang.talk.new_messages, 'is_enabled' => $iUserCurrentCountTalkNew, 'count' => $iUserCurrentCountTalkNew ],
+                    [ 'text' => $aLang.auth.logout,  'url' => "{router page='auth'}logout/?security_ls_key={$LIVESTREET_SECURITY_KEY}" ]
+                ]}
+            {else}
+                {$items = [
+                    [ 'text' => $aLang.auth.login.title,        'classes' => 'js-modal-toggle-login',        'url' => {router page='auth/login'} ],
+                    [ 'text' => $aLang.auth.registration.title, 'classes' => 'js-modal-toggle-registration', 'url' => {router page='auth/register'} ]
+                ]}
+            {/if}
+
+            {component 'nav' name='userbar' activeItem=$sMenuHeadItemSelect mods='userbar' items=$items}
+        </nav>
+
+        {include 'navs/nav.main.tpl'}
+
+        {component 'search' template='main' mods='light'}
+    </nav></div>
+    {if $oUserCurrent}
+        {component 'modal-create'}
+    {/if}
 
     {**
      * Основной контэйнер
