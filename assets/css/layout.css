@@ -75,3 +75,8 @@
 .ls-jumbotron {
     background-image: url(../images/header.png);
 }
+
+ul.classic {
+  list-style: inside;
+  list-style-type: circle;
+}
