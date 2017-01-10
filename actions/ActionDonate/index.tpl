@@ -47,7 +47,6 @@
 (Единственное неудобство - придётся регистрироваться через Github.)</p>
 
 <p><ul class="classic">
-<li>Сделать иконку для пользователей <a href="https://git.oreolek.ru/if/ifhub-skin/issues/1">(см.)</a></li>
 <li>Вернуть плагин спойлеров <a href="https://git.oreolek.ru/if/ifhub-skin/issues/2">(см.)</a></li>
 <li>Исправить сохранение настроек уведомлений <a href="https://git.oreolek.ru/if/ifhub-skin/issues/6">(см.)</a></li>
 <li>Спрятать форму поиска под кнопку <a href="https://git.oreolek.ru/if/ifhub-skin/issues/3">(см.)</a></li>

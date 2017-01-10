@@ -1,0 +1,6 @@
+.ls-user::before {
+  background: url(/application/frontend/skin/ifhub/assets/images/usericon_28.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  width: 18px !important;
+  height: 18px !important;
+}

@@ -14,9 +14,10 @@
     {$layoutShowSystemMessages = $layoutShowSystemMessages|default:true}
 {/block}
 
+{*
 {block 'layout_head_styles' append}
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 {/block}
+*}
 
 {block 'layout_head' append}
     {* Получаем блоки для вывода в сайдбаре *}

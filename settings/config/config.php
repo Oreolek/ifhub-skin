@@ -18,7 +18,7 @@ $config['view']['grid']['fluid_max_width'] = '1200px';
 $config['view']['grid']['fixed_width'] = '1000px';
 
 // Показывать баннер с лого и описанием или нет
-$config['view']['layout_show_banner'] = true;
+$config['view']['layout_show_banner'] = false;
 
 // Подключение скриптов шаблона
 $config['head']['template']['js'] = array(
@@ -28,6 +28,7 @@ $config['head']['template']['js'] = array(
 // Подключение стилей шаблона
 $config['head']['template']['css'] = array(
 	"___path.skin.assets.web___/css/layout.css",
+	"___path.skin.assets.web___/css/colors.css",
 	"___path.skin.assets.web___/css/print.css"
 );
 
