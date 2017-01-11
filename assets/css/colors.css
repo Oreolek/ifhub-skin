@@ -4,3 +4,6 @@
   width: 18px !important;
   height: 18px !important;
 }
+.ls-block-header > .ls-block-title > a {
+  color: #fff !important;
+}
