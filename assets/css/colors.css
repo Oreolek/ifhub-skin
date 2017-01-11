@@ -7,3 +7,6 @@
 .ls-block-header > .ls-block-title > a {
   color: #fff !important;
 }
+.ls-nav-item--userbar-username img.avatar {
+  display: none;
+}
