@@ -32,4 +32,7 @@ $config['head']['template']['css'] = array(
 	"___path.skin.assets.web___/css/print.css"
 );
 
+$config['view']['seo']['topic_heading'] = 'h1';
+$config['view']['seo']['topic_heading_list'] = 'h2';
+
 return $config;
