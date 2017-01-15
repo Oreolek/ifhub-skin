@@ -3,6 +3,8 @@
   background-size: 100% 100% !important;
   width: 18px !important;
   height: 18px !important;
+  color: transparent;
+  content: "__" !important;
 }
 .ls-block-header > .ls-block-title > a {
   color: #fff !important;

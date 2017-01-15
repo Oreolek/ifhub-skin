@@ -72,6 +72,10 @@ ul.classic {
   list-style: inside;
   list-style-type: circle;
 }
+ol.classic {
+  list-style: inside;
+  list-style-type: decimal;
+}
 
 .ls-nav--userbar > .ls-nav-item > a{
   color: #ddd !important;
