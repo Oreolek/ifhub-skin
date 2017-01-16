@@ -28,11 +28,6 @@
     {$layoutShowSidebar = !!$layoutSidebarBlocks}
   {/if}
 
-  <script>
-    ls.lang.load({json var = $aLangJs});
-    ls.registry.set({json var = $aVarsJs});
-  </script>
-
   {**
    * Тип сетки сайта
    *}
@@ -282,4 +277,5 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/42008629" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+  {hook run='layout_body_end'}
 {/block}
