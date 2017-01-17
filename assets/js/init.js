@@ -38,6 +38,31 @@ jQuery(document).ready(function($){
 
 
     /**
+     * Userbar
+     */
+    $('.ls-userbar .ls-nav--root > .ls-nav-item--has-children').lsDropdown({
+        selectors: {
+            toggle: '> .ls-nav-item-link',
+            text: '> .ls-nav-item-link > .ls-nav-item-text',
+            menu: '> .ls-nav--sub'
+        }
+    });
+
+
+    /**
+     * Навигация по контенту
+     */
+    $('.ls-nav--root.ls-nav--pills > .ls-nav-item--has-children').lsDropdown({
+        selectors: {
+            toggle: '> .ls-nav-item-link',
+            text: '> .ls-nav-item-link > .ls-nav-item-text',
+            menu: '> .ls-nav--sub'
+        },
+        selectable: true
+    });
+
+
+    /**
      * Подтверждение удаления
      */
     $('.js-confirm-remove-default').livequery(function () {
@@ -97,13 +122,13 @@ jQuery(document).ready(function($){
     });
 
     $('.js-field-date-default').livequery(function () {
-        $(this).lsFieldDate({
+        $(this).lsDate({
             language: LANGUAGE
         });
     });
 
     $('.js-field-time-default').livequery(function () {
-        $(this).lsFieldTime();
+        $(this).lsTime();
     });
 
     $('[data-type=captcha]').livequery(function () {
@@ -366,7 +391,7 @@ jQuery(document).ready(function($){
             cancel_photo: aRouter.settings + 'ajax-crop-cancel-photo'
         },
         changeavatar: function ( event, _this, avatars ) {
-            $( '.js-user-profile-avatar, .js-wall-entry[data-user-id=' + _this.option( 'params.user_id' ) + '] .comment-avatar img' ).attr( 'src', avatars[ '64crop' ] + '?' + Math.random() );
+            $( '.js-user-profile-avatar, .js-wall-entry[data-user-id=' + _this.option( 'params.target_id' ) + '] .ls-comment-avatar img' ).attr( 'src', avatars[ '64crop' ] + '?' + Math.random() );
             $( '.nav-item--userbar-username img' ).attr( 'src', avatars[ '24crop' ] + '?' + Math.random() );
         }
     });

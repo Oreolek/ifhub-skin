@@ -68,23 +68,10 @@
     }
 }
 
-ul.classic {
-  list-style: inside;
-  list-style-type: circle;
-}
-ol.classic {
-  list-style: inside;
-  list-style-type: decimal;
-}
 
-.ls-nav--userbar > .ls-nav-item > a{
-  color: #ddd !important;
-  padding: 15px 20px !important;
-}
-.ls-nav--userbar > .ls-nav-item > a:hover{
-  color: #ddd !important;
-  background: #333 !important;
-}
-.ls-nav--userbar > .ls-nav-item > a > img {
-  display: none;
+/**
+ * Шапка сайта
+ */
+.ls-jumbotron {
+    background-image: url(../images/header.jpg);
 }
