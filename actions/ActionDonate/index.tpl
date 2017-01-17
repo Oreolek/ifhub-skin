@@ -34,25 +34,25 @@
 <p>Сохраним до 2018 года. Но вот несколько других предложений:</p>
 
 <p><ul class="classic">
-<li>Открыть адрес IFHub для сети I2P</li>
 <li>Настроить автоматический бэкап важных IF-ресурсов (IFWiki, Библиотека РИЛ, форумы, блоги)</li>
-<li>Открыть закрытый Git-хостинг для <b>ваших</b> проектов (Gogs или Gitlab)</li>
 <li>Открыть программу поддержки авторов — платить <b>вам</b> за особо ценные статьи</li>
 </ul></p>
 
 <h5>А если поточнее?</h5>
 
 <p>Раз уж мы перечисляем планы, то вот план фиксов на неопределённое будущее.
-По ссылкам вы можете голосовать (палец вверх или вниз) за то, что вам важно.
-(Единственное неудобство - придётся регистрироваться через Github.)</p>
+По ссылкам вы можете голосовать (+смайлик, затем палец вверх или вниз) за то, что вам важно.
+(Единственное неудобство - придётся регистрироваться на Github.)</p>
 
 <p><ul class="classic">
-<li>Вернуть плагин спойлеров <a href="https://git.oreolek.ru/if/ifhub-skin/issues/2">(см.)</a></li>
-<li>Исправить сохранение настроек уведомлений <a href="https://git.oreolek.ru/if/ifhub-skin/issues/6">(см.)</a></li>
-<li>Спрятать форму поиска под кнопку <a href="https://git.oreolek.ru/if/ifhub-skin/issues/3">(см.)</a></li>
-<li>Сменить ссылки в списке активности сразу на комментарии <a href="https://git.oreolek.ru/if/ifhub-skin/issues/4">(см.)</a></li>
-<li>Сделать полнотекстовый поиск статей <a href="https://git.oreolek.ru/if/ifhub-skin/issues/7">(см.)</a></li>
+<li>Вернуть плагин спойлеров <a href="https://github.com/Oreolek/ifhub-skin/issues/2">(см.)</a></li>
+<li>Исправить сохранение настроек уведомлений <a href="https://github.com/Oreolek/ifhub-skin/issues/6">(см.)</a></li>
+<li>Спрятать форму поиска под кнопку <a href="https://github.com/Oreolek/ifhub-skin/issues/3">(см.)</a></li>
+<li>Сделать полнотекстовый поиск статей <a href="https://github.com/Oreolek/ifhub-skin/issues/7">(см.)</a></li>
+<li>Добавить визуальные индикаторы вложенности комментариев <a href="https://github.com/Oreolek/ifhub-skin/issues/5">(см.)</a></li>
 </ul></p>
+
+А вот по <a href="https://github.com/Oreolek/ifhub-skin/projects/1">этой</a> ссылке видно, как выполняется этот план.
 
 <p>Давайте пожелаем Ифхабу удачи.</p>
 {/block}
