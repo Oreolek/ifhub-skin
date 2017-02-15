@@ -192,6 +192,18 @@
             {if $layoutShowSidebar}
                 <aside class="ls-grid-col ls-grid-col-4 layout-sidebar" role="complementary">
                     {$layoutSidebarBlocks}
+
+                    <div class="ls-block">
+                        <h3 class="ls-block-title">Мы в социальных сетях</h3>
+                        <ul class="ls-item-group">
+                            <li class="ls-item">
+                                <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/if_hub">Twitter: @if_hub</a></p>
+                            </li>
+                            <li class="ls-item">
+                                <p><i class="fa fa-vk"></i> <a href="https://vk.com/ifhub">ВКонтакте: ifhub</a></p>
+                            </li>
+                        </ul>
+                    </div>
                 </aside>
             {/if}
         </div> {* /wrapper *}
