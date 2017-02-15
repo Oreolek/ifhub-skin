@@ -194,7 +194,9 @@
                     {$layoutSidebarBlocks}
 
                     <div class="ls-block">
-                        <h3 class="ls-block-title">Мы в социальных сетях</h3>
+                        <header class="ls-block-header">
+                            <h3 class="ls-block-title">Мы в социальных сетях</h3>
+                        </header>
                         <ul class="ls-item-group">
                             <li class="ls-item">
                                 <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/if_hub">Twitter: @if_hub</a></p>
