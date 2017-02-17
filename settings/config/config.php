@@ -22,7 +22,8 @@ $config['view']['layout_show_banner'] = false;
 
 // Подключение скриптов шаблона
 $config['head']['template']['js'] = array(
-	'___path.skin.assets.web___/js/init.js'
+	'___path.skin.assets.web___/js/init.js',
+	'___path.skin.assets.web___/js/ifhub.js',
 );
 
 // Подключение стилей шаблона
