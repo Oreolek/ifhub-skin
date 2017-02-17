@@ -46,7 +46,6 @@
 (Единственное неудобство - придётся регистрироваться на Github.)</p>
 
 <p><ul class="classic">
-<li>Вернуть плагин спойлеров <a href="https://github.com/Oreolek/ifhub-skin/issues/2">(см.)</a></li>
 <li>Исправить сохранение настроек уведомлений <a href="https://github.com/Oreolek/ifhub-skin/issues/6">(см.)</a></li>
 <li>Спрятать форму поиска под кнопку <a href="https://github.com/Oreolek/ifhub-skin/issues/3">(см.)</a></li>
 <li>Сделать полнотекстовый поиск статей <a href="https://github.com/Oreolek/ifhub-skin/issues/7">(см.)</a></li>
