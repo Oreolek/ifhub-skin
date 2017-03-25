@@ -76,3 +76,8 @@ ol.classic {
 .no-js .main-search {
     display: block;
 }
+
+/** Визуально выделить край комментария **/
+.ls-comment {
+    border-left: 1px solid #aaa;
+}
