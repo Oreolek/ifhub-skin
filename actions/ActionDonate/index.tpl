@@ -47,7 +47,6 @@
 
 <p><ul class="classic">
 <li>Сделать полнотекстовый поиск статей <a href="https://github.com/Oreolek/ifhub-skin/issues/7">(см.)</a></li>
-<li>Добавить визуальные индикаторы вложенности комментариев <a href="https://github.com/Oreolek/ifhub-skin/issues/5">(см.)</a></li>
 </ul></p>
 
 А вот по <a href="https://github.com/Oreolek/ifhub-skin/projects/1">этой</a> ссылке видно, как выполняется этот план.
