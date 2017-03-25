@@ -66,3 +66,13 @@ ol.classic {
 .spoiler-title.open:before {
     background: url(../images/spoiler.icon.png) no-repeat left bottom;
 }
+
+/**
+ *  Главный поиск в шапке сайта - показывается по клику
+ **/
+.main-search {
+    display: none;
+}
+.no-js .main-search {
+    display: block;
+}
