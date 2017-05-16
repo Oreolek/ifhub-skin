@@ -183,6 +183,7 @@
                 {block 'layout_content'}{/block}
 
                 {hook run='layout_content_end' action=$sAction}
+                {show_blocks group='similar'}
             </div>
 
             {**
@@ -203,6 +204,9 @@
                             </li>
                             <li class="ls-item">
                                 <p><i class="fa fa-vk"></i> <a href="https://vk.com/ifhub">ВКонтакте: ifhub</a></p>
+                            </li>
+                            <li class="ls-item">
+                                <p><i class="fa fa-telegram"></i> <a href="https://t.me/ifhub">Telegram: @IFHub</a></p>
                             </li>
                         </ul>
                     </div>
