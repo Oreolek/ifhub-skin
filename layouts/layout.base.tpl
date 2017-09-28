@@ -114,7 +114,10 @@
         {include 'navs/nav.main.tpl'}
 
         {component 'search' template='main' mods='light'}
-    </nav></div>
+    </nav>
+    <div class="text-center"><h4>IFHub - сайт о текстовых играх и текстах в играх.
+    Если вы не знакомы с этим жанром, <a target="_blank" href="/explain">нажмите сюда.</a></h4></div>
+    </div>
     {if $oUserCurrent}
         {component 'modal-create'}
     {/if}
