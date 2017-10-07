@@ -14,12 +14,13 @@
     {$layoutShowSystemMessages = $layoutShowSystemMessages|default:true}
 {/block}
 
-{*
 {block 'layout_head_styles' append}
+    <link rel="apple-touch-icon" href="{cfg 'path.skin.assets.web'}/images/touchicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{cfg 'path.skin.assets.web'}/images/touchicon_120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{cfg 'path.skin.assets.web'}/images/touchicon_152.png">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="search" type="application/opensearchdescription+xml" href="{router page='search'}opensearch/" title="{Config::Get('view.name')}" />
 {/block}
-*}
 
 {block 'layout_head' append}
     {* Получаем блоки для вывода в сайдбаре *}
