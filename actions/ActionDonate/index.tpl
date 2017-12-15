@@ -13,11 +13,9 @@
 
 <p>Поэтому здесь будет происходить сбор денег на то, чтобы оплатить издержки IFHub (хостинг и домен) <strong>за 2017 год.</strong></p>
 
-<p>На сегодня собрано 3189.50 из 6500р: <progress max="100" value="49"></progress></p>
+<p>На сегодня собрана вся сумма в 6500р. Ура! <progress max="100" value="100"></progress></p>
 
 <h3>Реквизиты для перечисления</h3>
-
-<p><b>Bitcoin:</b> 17qhwfeGfD1WJHNyQah4nVErBws4t8SLMs</p>
 
 <p><b>PayPal:</b> <a href="https://www.paypal.me/oreolek">перейти на форму</a></p>
 
