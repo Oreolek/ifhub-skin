@@ -21,7 +21,9 @@
 
 <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=410011560528046&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets=%D0%BD%D0%B0+ifhub.club&targets-hint=&default-sum=&button-text=03&successURL=" width="450" height="198"></iframe>
 
-<p> Отдельные пожертвования публично не освещаются. Переводы через Яндекс.Деньги анонимны; через PayPal отправителя видит только админ (как получатель). </p>
+<p> Отдельные пожертвования публично не освещаются<sup>1</sup>. Переводы через Яндекс.Деньги анонимны; через PayPal отправителя видит только админ (как получатель). </p>
+
+<p><small><sup>1</sup>: Интересующиеся суммами могут посмотреть <a target="_blank" href="https://github.com/Oreolek/ifhub-skin/commits/master/actions/ActionDonate/index.tpl">исходники этой страницы на Github,</a> которые обновляются вручную.</small></p>
 
 <p>&nbsp;</p>
 
