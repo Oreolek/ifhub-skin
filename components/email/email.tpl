@@ -46,7 +46,11 @@
           <table width="100%" bgcolor="#{$headerBackgroundColor}" cellpadding="50" cellspacing="0" style="border-collapse: collapse;">
             <tr>
               <td style="font-size: 11px; line-height: 1em;">
-                <p><span style="font-weight: normal; font-style: normal; font-size: 29px; font-family: 'Racing Sans One', Arial, sans-serif; line-height: 1em; color: #{$headerTitleColor}"><strong><span style="background-color: #cd1713">&nbsp;IF&nbsp;</span>Hub<span style="color: #b3b3b3">.club</span></strong></span></p>
+                <p>
+                <a href="{Router::GetPath('/')}">
+                <span style="font-weight: normal; font-style: normal; font-size: 29px; font-family: 'Racing Sans One', Arial, sans-serif; line-height: 1em; color: #{$headerTitleColor}"><strong><span style="background-color: #cd1713">&nbsp;IF&nbsp;</span>Hub<span style="color: #b3b3b3">.club</span></strong></span>
+                </a>
+                </p>
                 <p><span style="color: #{$headerDescriptionColor}">{Config::Get('view.description')}</span></p>
               </td>
             </tr>
@@ -76,9 +80,6 @@
                     <td valign="top">
                       {block 'content'}{/block}
                       {$content}
-                      <br>
-                      <br>
-                      {$aLangemails.common.regards} <a href="{Router::GetPath('/')}">{Config::Get('view.name')}</a>
                     </td>
                   </tr>
                 </table>
