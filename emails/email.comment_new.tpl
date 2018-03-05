@@ -2,7 +2,7 @@
  * Оповещение о новом комментарии в топике
  *}
 
-{extends 'Component@email.email'}
+{extends 'email'}
 
 {block 'content'}
     {lang name='emails.comment_new.text' params=[

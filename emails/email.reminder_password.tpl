@@ -2,7 +2,7 @@
  * Новый пароль
  *}
 
-{extends 'Component@email.email'}
+{extends 'email'}
 
 {block 'content'}
     {lang name='emails.reminder_password.text' params=[

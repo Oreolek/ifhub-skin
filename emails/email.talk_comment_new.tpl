@@ -2,7 +2,7 @@
  * Оповещение о новом сообщении в диалоге
  *}
 
-{extends 'Component@email.email'}
+{extends 'email'}
 
 {block 'content'}
     {lang name='emails.talk_comment_new.text' params=[

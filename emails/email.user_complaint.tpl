@@ -2,7 +2,7 @@
  * Жалоба
  *}
 
-{extends 'Component@email.email'}
+{extends 'email'}
 
 {block 'content'}
     {lang name='emails.user_complaint.text' params=[

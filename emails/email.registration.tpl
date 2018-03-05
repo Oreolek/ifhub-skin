@@ -2,7 +2,7 @@
  * Регистрация
  *}
 
-{extends 'Component@email.email'}
+{extends 'email'}
 
 {block 'content'}
     {lang name='emails.registration.text' params=[

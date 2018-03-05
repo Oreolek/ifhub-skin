@@ -2,7 +2,7 @@
  * Смена пароля
  *}
 
-{extends 'Component@email.email'}
+{extends 'email'}
 
 {block 'content'}
     {lang name='emails.reminder_code.text' params=[

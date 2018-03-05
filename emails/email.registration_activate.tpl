@@ -2,7 +2,7 @@
  * Подтверждение регистрации
  *}
 
-{extends 'Component@email.email'}
+{extends 'email'}
 
 {block 'content'}
     {lang name='emails.registration_activate.text' params=[
