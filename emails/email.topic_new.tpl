@@ -2,7 +2,7 @@
  * Оповещение о новом топике
  *}
 
-{extends 'email'}
+{extends 'component@email.email'}
 
 {block 'content'}
     {lang name='emails.topic_new.text' params=[

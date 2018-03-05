@@ -2,7 +2,7 @@
  * Заявка в друзья
  *}
 
-{extends 'email'}
+{extends 'component@email.email'}
 
 {block 'content'}
     {lang name='emails.user_friend_new.text' params=[

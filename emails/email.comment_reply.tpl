@@ -2,7 +2,7 @@
  * Оповещение об ответе на комментарий
  *}
 
-{extends 'email'}
+{extends 'component@email.email'}
 
 {block 'content'}
     {lang name='emails.comment_reply.text' params=[

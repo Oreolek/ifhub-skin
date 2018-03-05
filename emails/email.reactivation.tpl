@@ -2,7 +2,7 @@
  * Повторная активация
  *}
 
-{extends 'email'}
+{extends 'component@email.email'}
 
 {block 'content'}
     {lang name='emails.reactivation.text' params=[

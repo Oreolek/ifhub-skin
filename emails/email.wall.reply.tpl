@@ -2,7 +2,7 @@
  * Ответ на сообщение на стене
  *}
 
-{extends 'email'}
+{extends 'component@email.email'}
 
 {block 'content'}
     {lang name='emails.wall_reply.text' params=[

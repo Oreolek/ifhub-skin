@@ -2,7 +2,7 @@
  * Приглашение в закрытый блог
  *}
 
-{extends 'email'}
+{extends 'component@email.email'}
 
 {block 'content'}
     {lang name='emails.blog_invite_new.text' params=[

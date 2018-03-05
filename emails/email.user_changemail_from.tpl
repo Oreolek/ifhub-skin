@@ -2,7 +2,7 @@
  * Смена почты
  *}
 
-{extends 'email'}
+{extends 'component@email.email'}
 
 {block 'content'}
     {lang name='emails.user_changemail.text' params=[

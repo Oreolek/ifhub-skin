@@ -46,9 +46,8 @@
           <table width="100%" bgcolor="#{$headerBackgroundColor}" cellpadding="50" cellspacing="0" style="border-collapse: collapse;">
             <tr>
               <td style="font-size: 11px; line-height: 1em;">
-                <span style="font-weight: normal; font-style: normal; font-size: 29px; font-family: 'Racing Sans One', Arial, sans-serif; line-height: 1em; color: #{$headerTitleColor}"><strong><span style="background-color: #cd1713">&nbsp;IF&nbsp;</span>Hub<span style="color: #b3b3b3">.club</span></strong></span>
-                <div style="line-height: 0; height: 10px;"><img src="{$imagesDir}/blank.gif" width="10" height="10"/></div>
-                <span style="color: #{$headerDescriptionColor}">{Config::Get('view.description')}</span>
+                <p><span style="font-weight: normal; font-style: normal; font-size: 29px; font-family: 'Racing Sans One', Arial, sans-serif; line-height: 1em; color: #{$headerTitleColor}"><strong><span style="background-color: #cd1713">&nbsp;IF&nbsp;</span>Hub<span style="color: #b3b3b3">.club</span></strong></span></p>
+                <p><span style="color: #{$headerDescriptionColor}">{Config::Get('view.description')}</span></p>
               </td>
             </tr>
           </table>
@@ -69,7 +68,7 @@
                         <span style="font: normal 19px Arial; line-height: 1.3em; color: #{$contentTitleColor}">{$title}</span>
                       </td>
                     </tr>
-                    <tr><td height="10"><div style="line-height: 0;"><img src="{$imagesDir}/blank.gif" width="15" height="15"/></div></td></tr>
+                    <tr><td height="10">&nbsp;</td></tr>
                   {/if}
 
                   {* Текст *}
@@ -91,11 +90,11 @@
           <table width="100%" bgcolor="#{$footerBackgroundColor}" cellpadding="20" cellspacing="0" style="border-collapse: collapse; font: normal 11px Verdana, Arial; line-height: 1.3em; color: #{$footerTextColor};">
             <tr>
               <td valign="center">
-                <img src="{$imagesDir}/blank.gif" width="27" height="10" style="vertical-align: middle">
+                <div style="width:27px;height:10px;vertical-align: middle">&nbsp;</div>
                 <a href="{Router::GetPath('/')}" style="color: #{$footerLinkColor} !important;">{Config::Get('view.name')}</a>
                 {if isset($oUserTo) }
                 <br>
-                <img src="{$imagesDir}/blank.gif" width="27" height="10" style="vertical-align: middle">
+                <div style="width:27px;height:10px;vertical-align: middle">&nbsp;</div>
                 Чтобы отписаться от уведомлений, снимите галочки <a href="{Router::getPath('/')}settings/tuning">в вашем профиле.</a>
                 {/if}
               </td>

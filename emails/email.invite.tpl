@@ -2,7 +2,7 @@
  * Приглашение на сайт
  *}
 
-{extends 'email'}
+{extends 'component@email.email'}
 
 {block 'content'}
     {lang name='emails.invite.text' params=[
