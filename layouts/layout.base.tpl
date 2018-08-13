@@ -253,8 +253,7 @@
     id:42008629,
     clickmap:true,
     trackLinks:true,
-    accurateTrackBounce:true,
-    webvisor:true
+    accurateTrackBounce:true
    });
   } catch(e) { }
  });
