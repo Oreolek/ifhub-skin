@@ -192,8 +192,6 @@
              *}
             {if $layoutShowSidebar}
                 <aside class="ls-grid-col ls-grid-col-4 layout-sidebar" role="complementary">
-                    <a target="_blank" href="http://kril.ifiction.ru/games2018/"><img src="/application/frontend/skin/ifhub/assets/images/kril.png" width="100%"></a>
-
                     {$layoutSidebarBlocks}
 
                     <div class="ls-block">
