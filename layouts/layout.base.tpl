@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://mc.yandex.ru" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://ajax.googleapis.com" />
 {/block}
 
 {block 'layout_head' append}
@@ -274,6 +275,18 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/42008629" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<script>
+   (function(d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.async = true;
+      s.parentNode.insertBefore(wf, s);
+   })(document);
+   WebFont.load({
+    google: {
+      families: ['Open Sans:300,400,700:latin,cyrillic']
+    }
+  });
+</script>
 {hook run='layout_body_end'}
 {/block}
