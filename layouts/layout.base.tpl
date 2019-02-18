@@ -275,6 +275,11 @@
 })(document, window, "yandex_metrika_callbacks2");
 // /Yandex.Metrika counter
 // Google webfont loader
+    WebFontConfig = {
+      google: {
+        families: ['Open Sans:300,400,700:latin,cyrillic']
+      }
+    }
    (function(d) {
       var wf = d.createElement('script'), s = d.scripts[0];
       wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';

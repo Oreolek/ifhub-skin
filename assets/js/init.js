@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
             /\/tag\/?/,
             /\/rss\/?/,
             /\/ajax\/?/,
-            /#(.+)/,
+            /#(.+)/
         ]
     });
 
@@ -684,13 +684,5 @@ jQuery(document).ready(function($){
 
     // Хук конца инициализации javascript-составляющих шаблона
     ls.hook.run('ls_template_init_end',[],window);
-
-    if (WebFont !== undefined) {
-       WebFont.load({
-        google: {
-          families: ['Open Sans:300,400,700:latin,cyrillic']
-        }
-      });
-    }
 });
 
