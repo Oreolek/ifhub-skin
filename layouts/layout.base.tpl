@@ -281,11 +281,6 @@
       wf.async = true;
       s.parentNode.insertBefore(wf, s);
    })(document);
-   WebFont.load({
-    google: {
-      families: ['Open Sans:300,400,700:latin,cyrillic']
-    }
-  });
 </script>
 {hook run='layout_body_end'}
 {/block}

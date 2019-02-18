@@ -25,7 +25,6 @@ jQuery(document).ready(function($){
 
     ls.dev.init();
 
-
     /**
      * IE
      */
@@ -425,7 +424,7 @@ jQuery(document).ready(function($){
 
     // Добавление в избранное на странице диалога
     $('.js-talk-message-root-favourite').on('click', function (event) {
-        if (event.target == event.currentTarget) {
+        if (event.target === event.currentTarget) {
             $(this).find('.js-favourite-talk').lsFavourite('toggle');
         }
     });
@@ -668,5 +667,13 @@ jQuery(document).ready(function($){
 
     // Хук конца инициализации javascript-составляющих шаблона
     ls.hook.run('ls_template_init_end',[],window);
+
+    if (WebFont !== undefined) {
+       WebFont.load({
+        google: {
+          families: ['Open Sans:300,400,700:latin,cyrillic']
+        }
+      });
+    }
 });
 
