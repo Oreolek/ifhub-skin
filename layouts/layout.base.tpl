@@ -22,7 +22,6 @@
     <link rel="preconnect" href="https://mc.yandex.ru" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://ajax.googleapis.com" />
 {/block}
 
 {block 'layout_head' append}
@@ -275,14 +274,14 @@
 })(document, window, "yandex_metrika_callbacks2");
 // /Yandex.Metrika counter
 // Google webfont loader
-    WebFontConfig = {
-      google: {
-        families: ['Open Sans:300,400,700:latin,cyrillic']
-      }
-    }
+   var WebFontConfig = {
+     google: {
+       families: ['Open Sans:300,400,700:latin,cyrillic']
+     }
+   };
    (function(d) {
       var wf = d.createElement('script'), s = d.scripts[0];
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.src = 'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js';
       wf.async = true;
       s.parentNode.insertBefore(wf, s);
    })(document);
