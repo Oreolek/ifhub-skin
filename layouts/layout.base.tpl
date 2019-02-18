@@ -222,7 +222,6 @@
         <footer class="ls-grid-row layout-footer">
             {block 'layout_footer'}
                 {hook run='layout_footer_begin'}
-                {hook run='copyright'}
                 {hook run='layout_footer_end'}
             {/block}
         </footer>
@@ -248,6 +247,7 @@
     {component 'toolbar' classes='js-toolbar-default' items={show_blocks group='toolbar'}}
 
 <!-- Yandex.Metrika counter -->
+<noscript><div><img src="https://mc.yandex.ru/watch/42008629" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <script type="text/javascript" >
 (function (d, w, c) {
  (w[c] = w[c] || []).push(function() {
@@ -272,10 +272,8 @@
      d.addEventListener("DOMContentLoaded", f, false);
  } else { f(); }
 })(document, window, "yandex_metrika_callbacks2");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/42008629" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<script>
+// /Yandex.Metrika counter
+// Google webfont loader
    (function(d) {
       var wf = d.createElement('script'), s = d.scripts[0];
       wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
@@ -287,6 +285,7 @@
       families: ['Open Sans:300,400,700:latin,cyrillic']
     }
   });
+  window.addEventListener('load', function(){quicklink();});
 </script>
 {hook run='layout_body_end'}
 {/block}
