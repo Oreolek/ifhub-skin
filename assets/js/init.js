@@ -13,18 +13,16 @@ jQuery(document).ready(function($){
     quicklink({
         ignores: [
             /\/profile\//,
-            /\/blog\/?/,
+            /\/blogs?\/?/,
             /\/content\/?/,
             /\/talk\/?/,
             /\/settings\/?/,
             /\/admin\/?/,
             /\/auth\/?/,
-            /\/blogs\/?/,
             /\/people\/?/,
             /\/tag\/?/,
             /\/rss\/?/,
-            /\/ajax\/?/,
-            /#(.+)/
+            /\/ajax\/?/
         ]
     });
 
