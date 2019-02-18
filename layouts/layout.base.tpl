@@ -222,6 +222,7 @@
         <footer class="ls-grid-row layout-footer">
             {block 'layout_footer'}
                 {hook run='layout_footer_begin'}
+                {hook run='copyright'}
                 {hook run='layout_footer_end'}
             {/block}
         </footer>
@@ -285,7 +286,6 @@
       families: ['Open Sans:300,400,700:latin,cyrillic']
     }
   });
-  window.addEventListener('load', function(){quicklink();});
 </script>
 {hook run='layout_body_end'}
 {/block}
