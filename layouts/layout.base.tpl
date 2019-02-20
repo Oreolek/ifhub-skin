@@ -210,6 +210,9 @@
                             <li class="ls-item">
                                 <p><i class="fa fa-telegram"></i> <a href="https://t.me/ifhub">Telegram: @IFHub</a></p>
                             </li>
+                            <li class="ls-item">
+                                <p><i class="fa fa-pencil"></i> <a href="https://botsin.space/@ifhub">Mastodon: @IFHub@botsin.space</a></p>
+                            </li>
                         </ul>
                     </div>
                 </aside>
