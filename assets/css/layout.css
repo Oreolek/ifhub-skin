@@ -98,3 +98,14 @@
     box-shadow: inset 0 0 .12em rgba(0,0,0,.1);
     float: right;
 }
+
+/**
+ * Делаем минус незаметнее, разделяем кнопки визуально
+ */
+.ls-vote .ls-vote-body .ls-vote-item {
+    padding: 0.5em 1em;
+    margin-left: 0.2em;
+}
+.ls-vote .ls-vote-body .ls-vote-item-down {
+    background: #eee;
+}
