@@ -109,3 +109,8 @@
 .ls-topic-footer .ls-vote .ls-vote-body .ls-vote-item-down {
     background: #eee;
 }
+
+.markItUpEditor {
+    font-size: 12pt;
+    font-family: "Fira Code", "Anonymous Pro", "PT Mono", "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+}
