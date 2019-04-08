@@ -110,16 +110,14 @@
     background: #eee;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 800px) {
     .markItUp .markItUpContainer .markItUpEditor {
-        font-size: 12pt;
-        font-size: 1.2vmin;
+        font-size: 11pt;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 801px) {
     .markItUp .markItUpContainer .markItUpEditor {
-        font-size: 14pt;
-        font-size: 1.4vmin;
+        font-size: 12pt;
     }
 }
 .markItUp .markItUpContainer .markItUpEditor {
