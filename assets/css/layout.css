@@ -110,9 +110,71 @@
     background: #eee;
 }
 
+@media (max-width: 1199px) {
+    .markItUp .markItUpContainer .markItUpEditor {
+        font-size: 12pt;
+        font-size: 1.2vmin;
+    }
+}
+@media (min-width: 1200px) {
+    .markItUp .markItUpContainer .markItUpEditor {
+        font-size: 14pt;
+        font-size: 1.4vmin;
+    }
+}
 .markItUp .markItUpContainer .markItUpEditor {
-    font-size: 12pt;
-    font-size: 1.6vmin;
     line-height: 1.6;
     font-family: "Fira Code","Anonymous Pro","PT Mono","IBM Plex Mono", "Noto Mono","Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 }
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+/** Спойлер
+ * Modified by fedorov mich // 2014 // bSpoiler LS 1.0
+ **/
+.spoiler-title {
+    color: #6da3bd;
+    text-decoration: underline 1px dashed;
+    font-weight: normal;
+    cursor: pointer;
+}
+.spoiler-title:hover {
+    color: #4d7285;
+}
+.spoiler[open] .spoiler-title {
+    text-decoration: none;
+    margin-bottom: .5em;
+}
+.spoiler {
+    padding: 10px;
+}
+.spoiler[open] {
+    border: 1px solid #eee;
+    background: #f9f9f9;
+}
+.spoiler-title:before {
+    float: left;
+    content: " ";
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    display: block;
+    border: 0px solid red;
+    background: url(../images/spoiler.icon.png) no-repeat left top;
+}
+.spoiler[open] .spoiler-title:before {
+    background: url(../images/spoiler.icon.png) no-repeat left bottom;
+}
+
+/* https://github.com/stationer/DetailsShim - заглушка <details> для старых браузеров */
+details.details_shim_closed,
+details.details_shim_open {display: block;}
+details.details_shim_closed > * {display: none;}
+details.details_shim_closed > summary,
+details.details_shim_open   > summary {display: block;}
+details.details_shim_closed > summary:before {display: inline-block; content: "\25b6"; padding: 0 0.1em; margin-right: 0.4em; font-size: 0.9em;}
+details.details_shim_open > summary:before {display: inline-block; content: "\25bc"; padding: 0; margin-right: 0.35em;}
