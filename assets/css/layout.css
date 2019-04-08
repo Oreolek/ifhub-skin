@@ -138,23 +138,20 @@ summary {
  **/
 .spoiler-title {
     color: #6da3bd;
-    text-decoration: underline 1px dashed;
+    border-bottom: 1px dashed;
     font-weight: normal;
     cursor: pointer;
 }
 .spoiler-title:hover {
     color: #4d7285;
 }
-.spoiler[open] .spoiler-title {
-    text-decoration: none;
-    margin-bottom: .5em;
-}
-.spoiler {
+.spoiler-body {
+    display: none;
     padding: 10px;
-}
-.spoiler[open] {
     border: 1px solid #eee;
     background: #f9f9f9;
+    margin-top: 10px;
+    overflow: hidden;
 }
 .spoiler-title:before {
     float: left;
@@ -166,7 +163,42 @@ summary {
     border: 0px solid red;
     background: url(../images/spoiler.icon.png) no-repeat left top;
 }
-.spoiler[open] .spoiler-title:before {
+.spoiler-title.open:before {
+    background: url(../images/spoiler.icon.png) no-repeat left bottom;
+}
+
+
+.newspoiler-title {
+    color: #6da3bd;
+    text-decoration: underline 1px dashed;
+    font-weight: normal;
+    cursor: pointer;
+}
+.newspoiler-title:hover {
+    color: #4d7285;
+}
+.newspoiler[open] .newspoiler-title {
+    text-decoration: none;
+    margin-bottom: .5em;
+}
+.newspoiler {
+    padding: 10px;
+}
+.newspoiler[open] {
+    border: 1px solid #eee;
+    background: #f9f9f9;
+}
+.newspoiler-title:before {
+    float: left;
+    content: " ";
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    display: block;
+    border: 0px solid red;
+    background: url(../images/spoiler.icon.png) no-repeat left top;
+}
+.newspoiler[open] .newspoiler-title:before {
     background: url(../images/spoiler.icon.png) no-repeat left bottom;
 }
 
