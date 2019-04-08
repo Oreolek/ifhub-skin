@@ -112,5 +112,7 @@
 
 .markItUp .markItUpContainer .markItUpEditor {
     font-size: 12pt;
-    font-family: "Fira Code", "Anonymous Pro", "PT Mono", "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    font-size: 1.6vmin;
+    line-height: 1.6;
+    font-family: "Fira Code","Anonymous Pro","PT Mono","IBM Plex Mono", "Noto Mono","Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 }
