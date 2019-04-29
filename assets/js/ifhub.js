@@ -6,10 +6,10 @@
  */
 
 jQuery(document).ready(function($){
-    $(".search-icon").on('click touchstart', function(){
+    $(".search-icon").on('click', function(){
         $(".main-search").toggle()
     });
-    $('.spoiler-title').on('click touchstart', function(){
+    $('.spoiler-title').on('click', function(){
         $(this).toggleClass('open');
         $(this).parent().children('div.spoiler-body').toggle('normal');
         return false;
