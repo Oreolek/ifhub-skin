@@ -7,7 +7,6 @@
 
     <div class="shortinfo">
         <a href="{$user->getUserWebPath()}" class="ls-activity-block-recent-user">{$user->getDisplayName()}</a>
-        комментирует
         <br>
         <a href="{$topic->getUrl()}#comment{$commentN}">{$topic->getTitle()|escape}</a>
     </div>

@@ -208,3 +208,50 @@ details.details_shim_closed > summary,
 details.details_shim_open   > summary {display: block;}
 details.details_shim_closed > summary:before {display: inline-block; content: "\25b6"; padding: 0 0.1em; margin-right: 0.4em; font-size: 0.9em;}
 details.details_shim_open > summary:before {display: inline-block; content: "\25bc"; padding: 0; margin-right: 0.35em;}
+.hidden {
+    display: none;
+}
+.ls-block--primary {
+    border: none;
+}
+.ls-block .ls-tab-list {
+    border-bottom: none;
+}
+.ls-tab.active {
+    -moz-box-shadow:    inset 0 0 4px #0c3151;
+    -webkit-box-shadow: inset 0 0 4px #0c3151;
+    box-shadow:         inset 0 0 4px #0c3151;
+}
+.ls-activity-block-recent-info {
+    width: 5em;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+/**
+ * Делаем кнопку комментов чуть больше, чтобы легче её нажимать
+ */
+.ls-activity-block-recent-info .ls-activity-block-recent-comments {
+    padding: 5px;
+}
+.shortinfo {
+    width: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.ls-item-group .ls-item {
+    border-bottom: 0;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+.ls-block--activity-recent .ls-tab-pane .ls-item-body {
+    width: 100%;
+    display: flex;
+}
+.ls-tab-pane .ls-item-description {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.ls-block--activity-recent .ls-block-header {
+    display: none;
+}

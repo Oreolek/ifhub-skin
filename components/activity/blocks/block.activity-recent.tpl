@@ -20,7 +20,7 @@
     tabs     = [
         'classes' => 'js-tabs-block js-activity-block-recent-tabs',
         'tabs' => [
-            [ 'text' => {lang 'activity.block_recent.topics'},   'url' => "{router page='ajax'}stream/topic", 'list' => $content ],
-            [ 'text' => {lang 'activity.block_recent.comments'}, 'url' => "{router page='ajax'}stream/comment" ]
+            [ 'text' => 'Новые топики',   'url' => "{router page='ajax'}stream/topic", 'list' => $content ],
+            [ 'text' => 'Свежие комментарии', 'url' => "{router page='ajax'}stream/comment" ]
         ]
     ]}
