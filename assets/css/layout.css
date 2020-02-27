@@ -14,6 +14,10 @@
     margin: 0 auto;
     padding: 0 50px;
 }
+.layout-content {
+    background: #fff;
+    padding: 40px !important;
+}
 .layout-nav .ls-nav.ls-nav--main {
     margin: 0 auto;
 }
@@ -32,51 +36,11 @@
 .layout-sidebar .ls-block {
     margin-bottom: 10px;
 }
-.ls-nav-group .ls-nav:only-child {
-    float: none;
-}
-.ls-nav-group .ls-nav:first-child {
-    float: left;
-    clear: left;
-}
-.ls-nav-group .ls-nav:last-child {
-    float: right;
-    clear: right;
-}
-.ls-nav-group {
-    clear: both;
-}
 
-.layout-content {
-    background: #fff;
-    padding: 40px !important;
-    width: 100%;
-}
-.ifhub-content {
-    columns: 3 200px;
-    column-gap: 1rem;
-}
-.ifhub-content article {
-}
-.layout-sidebar {
-    width: 100%;
-}
 /* Responsive */
 @media (max-width: 999px)  {
-    .layout-content {
-        width: 100% !important;
-        margin-bottom: 30px;
-        padding: 15px !important;
-    }
-    .ifhub-content {
-        columns: 1 100%;
-        column-gap: 0;
-    }
-    .layout-sidebar {
-        width: 100% !important;
-        margin-bottom: 30px;
-        padding: 0;
-    }
+    .layout-content { width: 100% !important; margin-bottom: 30px; padding: 15px !important; }
+    .layout-sidebar { width: 100% !important; margin-bottom: 30px; padding: 0; }
 
     .ls-toolbar {
         display: none;
@@ -136,32 +100,8 @@
 }
 
 /**
- * Выделяем заголовок
- */
-h2.ls-topic-title a {
-    font-weight: bold;
-}
-
-/**
- * Центруем пагинацию
- */
-.ls-pagination .ls-pagination-list {
-    /*
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    */
-}
-
-/**
  * Делаем минус незаметнее, разделяем кнопки визуально
  */
-.ls-topic-footer .ls-topic-info .ls-topic-info-item.ls-topic-info-item--comments {
-    float: right;
-}
-.ls-topic-footer .ls-topic-info .ls-topic-info-item {
-    margin-right: 0.5rem;
-}
 .ls-topic-footer .ls-vote .ls-vote-body .ls-vote-item {
     padding: 0.5em 1em;
     margin-left: 0.2em;

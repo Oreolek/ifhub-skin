@@ -32,6 +32,30 @@
         {$layoutSidebarBlocks = trim( $layoutSidebarBlocks )}
         {$layoutShowSidebar = !!$layoutSidebarBlocks}
     {/if}
+
+    {**
+     * Тип сетки сайта
+     *}
+    {if {Config::Get('view.grid.type')} == 'fluid'}
+        <style>
+            .layout-userbar,
+            .layout-nav .ls-nav--main,
+            .layout-header .ls-jumbotron-inner,
+            .layout-container,
+            .container {
+                min-width: {Config::Get('view.grid.fluid_min_width')};
+                max-width: {Config::Get('view.grid.fluid_max_width')};
+            }
+        </style>
+    {else}
+        <style>
+            .layout-userbar,
+            .layout-nav .ls-nav--main,
+            .layout-header .ls-jumbotron-inner,
+            .layout-container,
+            .container { width: {Config::Get('view.grid.fixed_width')}; }
+        </style>
+    {/if}
 {/block}
 
 {block 'layout_body'}
@@ -106,7 +130,7 @@
             {**
              * Контент
              *}
-            <div class="ls-grid-col layout-content"
+            <div class="ls-grid-col ls-grid-col-8 layout-content"
                  role="main"
                  {if $sMenuItemSelect == 'profile'}itemscope itemtype="http://data-vocabulary.org/Person"{/if}>
 
@@ -159,8 +183,8 @@
 
                 {hook run='layout_content_begin' action=$sAction}
                 {block 'layout_content'}{/block}
-                {hook run='layout_content_end' action=$sAction}
 
+                {hook run='layout_content_end' action=$sAction}
                 {show_blocks group='similar'}
             </div>
 
@@ -169,7 +193,7 @@
              * Показываем сайдбар
              *}
             {if $layoutShowSidebar}
-                <aside class="ls-grid-col layout-sidebar" role="complementary">
+                <aside class="ls-grid-col ls-grid-col-4 layout-sidebar" role="complementary">
                     {$layoutSidebarBlocks}
 
                     <div class="ls-block">
@@ -198,29 +222,6 @@
 
         {* Подвал *}
         <footer class="ls-grid-row layout-footer">
-    <a href="{router page='rss'}/index">RSS главной страницы</a><br>
-    <a href="{router page='rss'}new/">RSS всех топиков</a><br>
-    <a href="{router page='rss'}allcomments/">RSS комментариев</a>
-<div class="ls-block">
-                        <header class="ls-block-header">
-                            <h3 class="ls-block-title">Мы в социальных сетях</h3>
-                        </header>
-                        <ul class="ls-item-group">
-                            <li class="ls-item">
-                                <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/if_hub">Twitter: @if_hub</a></p>
-                            </li>
-                            <li class="ls-item">
-                                <p><i class="fa fa-vk"></i> <a href="https://vk.com/ifhub">ВКонтакте: ifhub</a></p>
-                            </li>
-                            <li class="ls-item">
-                                <p><i class="fa fa-telegram"></i> <a href="https://t.me/ifhub">Telegram: @IFHub</a></p>
-                            </li>
-                            <li class="ls-item">
-                                <p><i class="fa fa-pencil"></i> <a rel="me" href="https://botsin.space/@ifhub">Mastodon: @IFHub@botsin.space</a></p>
-                            </li>
-                        </ul>
-                    </div>
-
             {block 'layout_footer'}
                 {hook run='layout_footer_begin'}
                 {hook run='copyright'}
