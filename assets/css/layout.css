@@ -102,6 +102,9 @@
 /**
  * Делаем минус незаметнее, разделяем кнопки визуально
  */
+.ls-topic {
+    content-visibility: auto;
+}
 .ls-topic-footer .ls-vote .ls-vote-body .ls-vote-item {
     padding: 0.5em 1em;
     margin-left: 0.2em;
