@@ -65,9 +65,9 @@
      *}
     <div class="layout-container">
     <nav class="ls-grid-row layout-nav">
-        <h1 class="ls-userbar-logo">
+        <div class="ls-userbar-logo">
             <a href="{router page='/'}"><img src="/application/frontend/skin/ifhub/assets/images/logo.png" height="60px"></a>
-        </h1>
+        </div>
 
         <nav class="ls-userbar-nav">
             {if $oUserCurrent}
