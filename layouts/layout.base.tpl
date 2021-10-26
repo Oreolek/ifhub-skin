@@ -21,7 +21,6 @@
     <link rel="search" type="application/opensearchdescription+xml" href="{router page='search'}opensearch/" title="{Config::Get('view.name')}" />
     <link rel="preconnect" href="https://mc.yandex.ru" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
 {/block}
 
 {block 'layout_head' append}
@@ -276,18 +275,6 @@
  } else { f(); }
 })(document, window, "yandex_metrika_callbacks2");
 // /Yandex.Metrika counter
-// Google webfont loader
-   var WebFontConfig = {
-     google: {
-       families: ['Open Sans:300,400,700:latin,cyrillic']
-     }
-   };
-   (function(d) {
-      var wf = d.createElement('script'), s = d.scripts[0];
-      wf.src = 'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js';
-      wf.async = true;
-      s.parentNode.insertBefore(wf, s);
-   })(document);
 </script>
 {hook run='layout_body_end'}
 {/block}
