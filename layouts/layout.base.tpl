@@ -201,16 +201,13 @@
                         </header>
                         <ul class="ls-item-group">
                             <li class="ls-item">
-                                <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/if_hub">Twitter: @if_hub</a></p>
-                            </li>
-                            <li class="ls-item">
-                                <p><i class="fa fa-vk"></i> <a href="https://vk.com/ifhub">ВКонтакте: ifhub</a></p>
+                                <p><i class="fa fa-pencil"></i> <a rel="me" href="https://botsin.space/@ifhub">Mastodon: @IFHub@botsin.space</a></p>
                             </li>
                             <li class="ls-item">
                                 <p><i class="fa fa-telegram"></i> <a href="https://t.me/ifhub">Telegram: @IFHub</a></p>
                             </li>
                             <li class="ls-item">
-                                <p><i class="fa fa-pencil"></i> <a rel="me" href="https://botsin.space/@ifhub">Mastodon: @IFHub@botsin.space</a></p>
+                                <p><i class="fa fa-vk"></i> <a href="https://vk.com/ifhub">ВКонтакте: ifhub</a></p>
                             </li>
                         </ul>
                     </div>
