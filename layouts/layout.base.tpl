@@ -24,6 +24,8 @@
 {/block}
 
 {block 'layout_head' append}
+    <meta property="telegram:channel" content="@ifhub">
+    <meta property="tg:site_verification" content="">
     {* Получаем блоки для вывода в сайдбаре *}
     {if $layoutShowSidebar}
         {show_blocks group='right' assign=layoutSidebarBlocks}
