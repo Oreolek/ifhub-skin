@@ -204,7 +204,7 @@
                                 <p><i class="fa fa-pencil"></i> <a rel="me" href="https://botsin.space/@ifhub">Mastodon: @IFHub@botsin.space</a></p>
                             </li>
                             <li class="ls-item">
-                                <p><i class="fa fa-telegram"></i> <a href="https://t.me/ifhub">Telegram: @IFHub</a></p>
+                                <p><i class="fa fa-telegram"></i> <a href="https://t.me/+9gd-2Eu_N6YzMjIy">Telegram: @IFHub</a></p>
                             </li>
                             <li class="ls-item">
                                 <p><i class="fa fa-vk"></i> <a href="https://vk.com/ifhub">ВКонтакте: ifhub</a></p>
