@@ -258,3 +258,11 @@ details.details_shim_open > summary:before {display: inline-block; content: "\25
 .ls-block--activity-recent .ls-block-header {
     display: none;
 }
+/* Ссылка на сноску и обратно - большие поля чтобы было проще попасть пальцем. */
+.fnlink {
+    padding: 0.3rem;
+    font-size: 110%;
+}
+.fnlink sup {
+    font-size: 80%;
+}
