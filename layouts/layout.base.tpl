@@ -62,7 +62,9 @@
       _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
       _paq.push(["setCookieDomain", "*.ifhub.club"]);
       _paq.push(["setDomains", ["*.ifhub.club"]]);
-      _paq.push(['trackPageView']);
+      if (!window.location.pathname.match(/(\/admin|content\/edit)/)) {
+        _paq.push(['trackPageView']);
+      }
       _paq.push(['enableLinkTracking']);
       (function() {
         var u="https://webstats.ifhub.club/";
