@@ -19,8 +19,7 @@
     <link rel="apple-touch-icon" sizes="120x120" href="{cfg 'path.skin.assets.web'}/images/touchicon_120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="{cfg 'path.skin.assets.web'}/images/touchicon_152.png">
     <link rel="search" type="application/opensearchdescription+xml" href="{router page='search'}opensearch/" title="{Config::Get('view.name')}" />
-    <link rel="preconnect" href="https://mc.yandex.ru" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
 {/block}
 
 {block 'layout_head' append}
@@ -57,6 +56,24 @@
             .container { width: {Config::Get('view.grid.fixed_width')}; }
         </style>
     {/if}
+    {** Matomo *}
+    <script>
+      var _paq = window._paq = window._paq || [];
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.ifhub.club"]);
+      _paq.push(["setDomains", ["*.ifhub.club"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://webstats.ifhub.club/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', 'DlBPk']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="https://webstats.ifhub.club/matomo.php?idsite=DlBPk&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    {** End Matomo Code *}
 {/block}
 
 {block 'layout_body'}
@@ -247,46 +264,5 @@
     {* Подключение тулбара *}
     {component 'toolbar' classes='js-toolbar-default' items={show_blocks group='toolbar'}}
 
-<!-- Yandex.Metrika counter -->
-<noscript><div><img src="https://mc.yandex.ru/watch/42008629" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<script type="text/javascript" >
-(function (d, w, c) {
- (w[c] = w[c] || []).push(function() {
-  try {
-   w.yaCounter42008629 = new Ya.Metrika2({
-    id:42008629,
-    clickmap:true,
-    trackLinks:true,
-    accurateTrackBounce:true
-   });
-  } catch(e) { }
- });
-
- var n = d.getElementsByTagName("script")[0],
- s = d.createElement("script"),
- f = function () { n.parentNode.insertBefore(s, n); };
- s.type = "text/javascript";
- s.async = true;
- s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js";
-
- if (w.opera == "[object Opera]") {
-     d.addEventListener("DOMContentLoaded", f, false);
- } else { f(); }
-})(document, window, "yandex_metrika_callbacks2");
-// /Yandex.Metrika counter
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://webstats.oreolek.ru/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', 'DlBPk']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="https://webstats.oreolek.ru/matomo.php?idsite=DlBPk&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
 {hook run='layout_body_end'}
 {/block}
