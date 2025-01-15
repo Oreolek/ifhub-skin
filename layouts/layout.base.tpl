@@ -274,6 +274,20 @@
  } else { f(); }
 })(document, window, "yandex_metrika_callbacks2");
 // /Yandex.Metrika counter
+<!-- Matomo -->
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://webstats.oreolek.ru/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'DlBPk']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
+<noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="https://webstats.oreolek.ru/matomo.php?idsite=DlBPk&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
 {hook run='layout_body_end'}
 {/block}
