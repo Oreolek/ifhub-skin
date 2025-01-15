@@ -274,7 +274,6 @@
  } else { f(); }
 })(document, window, "yandex_metrika_callbacks2");
 // /Yandex.Metrika counter
-<!-- Matomo -->
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
