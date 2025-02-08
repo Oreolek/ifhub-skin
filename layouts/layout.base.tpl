@@ -222,7 +222,7 @@
                         </header>
                         <ul class="ls-item-group">
                             <li class="ls-item">
-                                <p><i class="fa fa-pencil"></i> <a rel="me" href="https://craba.cab/@ifhub">Mastodon: @IFHub@craba.cab</a></p>
+                                <p><i class="fa fa-pencil"></i> <a rel="me" href="https://gts.ifhub.club/@ifhub">Mastodon: @IFHub@gts.ifhub.club</a></p>
                             </li>
                             <li class="ls-item">
                                 <p><i class="fa fa-telegram"></i> <a href="https://t.me/+9gd-2Eu_N6YzMjIy">Telegram: @IFHub</a></p>
