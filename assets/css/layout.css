@@ -266,3 +266,8 @@ details.details_shim_open > summary:before {display: inline-block; content: "\25
 .fnlink sup {
     font-size: 80%;
 }
+.notice {
+    padding: 0.5rem;
+      color: #333;
+      background-color: #C2E4FF;
+}

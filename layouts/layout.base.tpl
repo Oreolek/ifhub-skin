@@ -214,6 +214,7 @@
              *}
             {if $layoutShowSidebar}
                 <aside class="ls-grid-col ls-grid-col-4 layout-sidebar" role="complementary">
+                    <div class="notice">🎂 IFHub исполняется 10 лет! Поздравления и добрые слова принимаем <a href="https://forms.gle/4k4SKSNzbusTauCEA">через форму.</a> 🎂</div>
                     {$layoutSidebarBlocks}
 
                     <div class="ls-block">
