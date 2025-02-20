@@ -24,7 +24,6 @@
 
 {block 'layout_head' append}
     <meta property="telegram:channel" content="@ifhub">
-    <meta property="tg:site_verification" content="">
     {* Получаем блоки для вывода в сайдбаре *}
     {if $layoutShowSidebar}
         {show_blocks group='right' assign=layoutSidebarBlocks}
@@ -226,7 +225,7 @@
                                 <p><i class="fa fa-pencil"></i> <a rel="me" href="https://gts.ifhub.club/@ifhub">Mastodon: @IFHub@gts.ifhub.club</a></p>
                             </li>
                             <li class="ls-item">
-                                <p><i class="fa fa-telegram"></i> <a href="https://t.me/+9gd-2Eu_N6YzMjIy">Telegram: @IFHub</a></p>
+                                <p><i class="fa fa-telegram"></i> <a href="https://t.me/s/ifhub">Telegram: @IFHub</a></p>
                             </li>
                             <li class="ls-item">
                                 <p><i class="fa fa-vk"></i> <a href="https://vk.com/ifhub">ВКонтакте: ifhub</a></p>
