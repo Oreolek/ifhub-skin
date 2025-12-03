@@ -68,12 +68,14 @@
       (function() {
         var u="https://webstats.ifhub.club/";
         _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', 'DM3xM']);
+        _paq.push(['setSiteId', '20']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
-    <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="https://webstats.ifhub.club/matomo.php?idsite=DlBPk&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <noscript>
+    <img referrerpolicy="no-referrer-when-downgrade" src="https://webstats.oreolek.ru/matomo.php?idsite=20&amp;rec=1" style="border:0" alt="" />
+    </noscript>
     {** End Matomo Code *}
 {/block}
 
