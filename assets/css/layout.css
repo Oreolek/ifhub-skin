@@ -273,7 +273,10 @@ details.details_shim_open > summary:before {display: inline-block; content: "\25
 }
 /* Включаем переносы слов на узких экранах. */
 @media (max-width: 480px)  {
-    .ls-word-wrap {
+    .ls-word-wrap,
+    .ls-topic-text,
+    .ls-item-title,
+    .ls-item-body .shortinfo {
         hyphens: auto;
     }
 }
