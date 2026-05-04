@@ -271,3 +271,9 @@ details.details_shim_open > summary:before {display: inline-block; content: "\25
       color: #333;
       background-color: #C2E4FF;
 }
+/* Включаем переносы слов на узких экранах. */
+@media (max-width: 480px)  {
+    .ls-word-wrap {
+        hyphens: auto;
+    }
+}
