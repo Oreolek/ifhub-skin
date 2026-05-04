@@ -46,3 +46,7 @@ ol.classic {
 .ls-comment {
     border-left: 1px solid #aaa;
 }
+dfn {
+    font-style: normal;
+    color: darkgreen;
+}
